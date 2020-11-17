@@ -4,20 +4,32 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    background-color: #34495e;
 }
 
 body {
+    /*background-color: cyan blue;*/
     font-family: 'Roboto', sans-serif;
 
-    background: #e4e4e4;
+    /*background: cyan blue;*/
 }
-
+label{
+    background-color: #353535;
+    width: 250px;
+}
+input{
+    background-color: #fff;
+}
 .form-container {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding-top: 50px
+    padding-top: 50px;
+
+}
+.form-box{
+    background-color: #353535;
 }
 
 .form-container .form-wrap {
@@ -46,6 +58,9 @@ body {
 .form-container .form-wrap .form-submit {
     display: flex;
     justify-content: center;
+    background-color: #353535;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 
@@ -70,8 +85,10 @@ div{
     padding-top: 5px;
     text-align: left;
     padding-left: 10px;
-    padding-right: 10px
+    padding-right: 10px;
 }
 h1{
     text-align: center;
+    background-color: #353535;
+    padding-bottom: 60px;
 }
