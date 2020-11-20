@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 
 def home(request):
-	return HttpResponse('home page')
+	return render(request, 'pages/dashboard.html')
 
 
 def contact(request):
@@ -12,5 +12,9 @@ def contact(request):
 
 def rule(request):
 	return HttpResponse('rules')
+
+
+def student_detail(request):
+	return render(request, 'pages/student_detail.html')
 
 # Create your views here.
