@@ -11,7 +11,7 @@ def contact(request):
 
 
 def rule(request):
-	return HttpResponse('rules')
+	return render(request, 'pages/rules.html')
 
 
 def student_detail(request):
