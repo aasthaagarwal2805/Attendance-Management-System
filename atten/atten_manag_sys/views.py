@@ -17,7 +17,20 @@ def rule(request):
 def student_detail(request):
 	return render(request, 'pages/student_detail.html')
 
-# def communication_detail(request):
-# 	return render(request, 'pages/communication.html')
+
+def student_login(request):
+	return render(request, 'pages/student_login.html')
+
+def communication(request):
+	return render(request, 'pages/communicational.html')
+
+
+def educational(request):
+	return render(request, 'pages/educational_details.html')
+
+def employee_login(request):
+	return render(request, 'pages/employe_login.html')
+
+
 
 # # Create your views here.
