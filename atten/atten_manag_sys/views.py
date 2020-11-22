@@ -17,4 +17,7 @@ def rule(request):
 def student_detail(request):
 	return render(request, 'pages/student_detail.html')
 
-# Create your views here.
+# def communication_detail(request):
+# 	return render(request, 'pages/communication.html')
+
+# # Create your views here.
