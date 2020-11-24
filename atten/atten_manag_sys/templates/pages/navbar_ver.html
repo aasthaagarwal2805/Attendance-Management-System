@@ -38,17 +38,20 @@ li a.b:hover:not(.active) {
 <body>
 
 <ul>
-  <li><a class="active b" href="#">Dashboard</a></li>
-  <li><a class="b" href="#">Student Details</a></li>
+  <li><a class="active b" href="{% url 'dashboard'%}">Dashboard</a></li>
+  <li><a class="b" href="{% url 'student-detail' %}">Student Details</a></li>
+  <li><a class="b" href="{% url 'communicational' %}">Student Communication Details</a></li>
+   <li><a class="b" href="{% url 'education' %}">Student ducational Details</a></li>
   <li><a class="b" href="#">Contact</a></li>
   <li><a class="b" href="#">About</a></li>
-  <li><a class="b" href="#">rules</a></li>
+  <li><a class="b" href="{% url 'rules'%}">rules</a></li>
   <li><a class="b" href="#">teacher</a></li>
   <li><a class="b" href="#">faculty</a></li>
-  <li><a class="b" href="#">faculty</a></li>
-  <li><a class="b" href="#">faculty</a></li>
-  <li><a class="b" href="#">faculty</a></li>
-  <li><a class="b" href="#">faculty</a></li>
+  <li><a class="b" href="#">Leave</a></li>
+  <li><a class="b" href="#">Subject</a></li>
+  <li><a class="b" href="#">Forget Password</a></li>
+  <li><a class="b" href="#">change Password</a></li>
+  <li><a class="b" href="#">Log Out</a></li>
 
 </ul>
 

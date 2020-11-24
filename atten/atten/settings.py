@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'atten_manag_sys',
+    # 'crispy-forms',
 
 ]
 

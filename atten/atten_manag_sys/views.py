@@ -32,5 +32,11 @@ def employee_login(request):
 	return render(request, 'pages/employe_login.html')
 
 
+# def leave(request):
+# 	form=leaveForm()
+# 	context={'form':form}
+# 	return render(request, 'pages/leave.html', context)
+
+
 
 # # Create your views here.
