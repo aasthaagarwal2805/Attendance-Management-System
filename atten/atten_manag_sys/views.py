@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.forms import inlineformset_factory
+from django.contrib.auth.forms import UserCreationForm
 
 
 def home(request):
@@ -19,7 +21,9 @@ def student_detail(request):
 
 
 def student_login(request):
-	return render(request, 'pages/student_login.html')
+	# form= UserCreationForm()
+	# context={'form': form}
+	return render(request, 'pages/stu_login.html')
 
 def communication(request):
 	return render(request, 'pages/communicational.html')
