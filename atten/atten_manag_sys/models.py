@@ -19,10 +19,11 @@ class teacher_user(models.Model):
 	father_official_mail=models.CharField(max_length=100, null=True)
 	mother_name=models.CharField(max_length=100, null=True)
 	mother_official_mail=models.CharField(max_length=100, null=True)
+	address=models.CharField(max_length=500, null=True)
 	sibling_name=models.CharField(max_length=100, null=True)
 	sibling_mail=models.CharField(max_length=100, null=True)
 	sibling_num=models.CharField(max_length=100,null=True)
-	address=models.CharField(max_length=500, null=True)
+	
 	date_created=models.DateTimeField(auto_now_add=True)
 
 

@@ -12,15 +12,16 @@
   </head>
   <body>
 
-<form class="box" action="index.html" method="post">
+<form class="box" action="" method="post">
+  {% csrf_token %}
   <h1>Login</h1>
   <div>
   	<!-- <i class="fas fa-lock"></i> -->
-  	<input type="text" name="" placeholder="Username" required>
+  	<input type="text" name="username" placeholder="Username" required>
   </div>
   <div>
   	<!-- <i class="eye fas fa-key"></i> -->
-  	<input type="password" name="" placeholder="Password" required>
+  	<input type="password" name="password" placeholder="Password" required>
   	<!-- <i class="show-password fas fa-eye-slash"></i> -->
   </div>
   <div>

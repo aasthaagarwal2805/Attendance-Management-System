@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Student Educational Detail Panel </title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/educational.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/stu_detail.css' %}" />
 
 <!-- CSS only -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -22,7 +22,7 @@
 
     {% include 'pages/navbar_ver.html' %}
 
-<div class="form-container">
+<div class="form-container" >
     <form action="#" method="POST" class="form-wrap">
         <h1>Educational Detail's Panel</h1>
         <div class="container">
@@ -31,12 +31,19 @@
             <div class="form-box">
             <label for="add">Stream:</label>
             <input id="add" type="text" placeholder="stream" required />
+            </div>
 
-            <label for="add">Grade:</label>
+            <div class="form-box">
+                <label for="add">Grade:</label>
             <input id="add" type="text" placeholder="grade" required />
+            </div>
 
-            <label for="add">Board:</label>
+            <div class="form-box">
+                <label for="add">Board:</label>
             <input id="add" type="text" placeholder="name" required />
+            </div>
+
+            <div class="form-box">
 
             <label for="add">University:</label>
             <input id="add" type="text" placeholder="name" required />
@@ -50,15 +57,23 @@
             <div class="form-box">
             <label for="add">Stream:</label>
             <input id="add" type="text" placeholder="stream" required />
-
-            <label for="add">Grade:</label>
+            </div>
+            <div class="form-box">
+                <label for="add">Grade:</label>
             <input id="add" type="text" placeholder="grade" required />
+            </div>
 
-            <label for="add">Board:</label>
+            <div class="form-box">
+                <label for="add">Board:</label>
             <input id="add" type="text" placeholder="name" required />
+            </div>
 
-            <label for="add">University:</label>
+            <div class="form-box a">
+                <label for="add">University:</label>
             <input id="add" type="text" placeholder="name" required />
+            </div>
+
+            
             
 
 
@@ -66,9 +81,9 @@
         
        
 
-        <div class="form-submit">
+       <!--  <div class="form-submit">
             <input type="submit" class="btn btn-success" value="Submit Details" />
-        </div>
+        </div> -->
     </form>
 </div>
 
