@@ -50,6 +50,12 @@ def student_login(request):
 	return render(request, 'pages/stu_login.html')
 
 
+def leave(request):
+	leaves= leave.objects.all()
+	y = {'leaves': leaves}
+	return render(request, 'pages/leave.html', y)
+
+
 	
 @login_required(login_url='student-login')
 def communication(request):

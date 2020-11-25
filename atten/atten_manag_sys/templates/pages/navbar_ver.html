@@ -52,7 +52,7 @@ li a.b:hover:not(.active) {
 </head>
 <body id="page-top">
 
-
+<!-- 
   <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
 
       <a class="navbar-brand mr-1" href="{% url 'dashboard' %}">AMS Dashboard</a>
@@ -72,9 +72,8 @@ li a.b:hover:not(.active) {
         </div>
 
 
-        <span class ="hello-msg">Hello,{{request.user}}</span>
-        <span> <a class ="hello-msg" href="{% url 'logout'%}">Logout</a> </span>
-      </form>
+       
+      </form> -->
 
 
 
@@ -117,11 +116,10 @@ li a.b:hover:not(.active) {
         </li>
       </ul> -->
 
-    </nav>
-
+   <!--   -->
 
     <!-- Sidebar -->
-      <ul class="sidebar navbar-nav">
+      <ul class="sidebar navbar-nav fixed-top">
         <li class="nav-item active">
           <a class="nav-link" href="{% url 'dashboard'%}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
@@ -129,26 +127,37 @@ li a.b:hover:not(.active) {
           </a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'student-detail' %}">
             <i class="fas fa-fw fa-folder"></i>
-            <span>Student Details</span>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="{% url 'student-detail' %}">Student Details</a>
-            <a class="dropdown-item" href="{% url 'communicational' %}">Communication Details</a>
-            <a class="dropdown-item" href="{% url 'education' %}">Educational Details</a>
-           
-          </div>
+            <span>Student Details</span></a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="{% url 'communicational' %}">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Communication Details</span></a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="{% url 'education' %}">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Educational Details</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'leave' %}">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Leave</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
             <i class="fas fa-fw fa-folder"></i>
             <span>page</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="fas fa-fw fa-folder"></i>
-            <span>page</span></a>
+
+        <li>
+           <span class ="hello-msg">Hello,{{request.user}}</span>
+        <span> <a class ="hello-msg" href="{% url 'logout'%}">Logout</a> </span>
         </li>
 
 
